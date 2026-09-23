@@ -1,0 +1,263 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- TÍTULO DO APLICATIVO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="PausaFácil"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#25365B" />
+
+        <!-- SUBTÍTULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Sua comunicação, do seu jeito."
+            android:textSize="16sp"
+            android:textColor="#64748B" />
+
+        <!-- ÁREA DE APRESENTAÇÃO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_intro">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="O que você deseja comunicar?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#25365B" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecione um dos cartões abaixo."
+                android:textSize="16sp"
+                android:textColor="#64748B" />
+
+        </LinearLayout>
+
+        <!-- PRIMEIRA LINHA DE CARTÕES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <!-- CARTÃO: QUERO ÁGUA -->
+
+            <LinearLayout
+                android:id="@+id/btnWater"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_card_water"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Quero água">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/glass_water"
+                    android:tint="#2563EB"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Quero água"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E40AF" />
+
+            </LinearLayout>
+
+            <!-- CARTÃO: PRECISO DE AJUDA -->
+
+
+            <LinearLayout
+                android:id="@+id/btnHelp"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_card_help"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Preciso de ajuda">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/hand_helping"
+                    android:tint="#15803D" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Preciso de ajuda"
+                    android:textColor="#166534"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- SEGUNDA LINHA DE CARTÕES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- CARTÃO: ESTOU FELIZ -->
+
+            <LinearLayout
+                android:id="@+id/btnHappy"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_card_happy"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Estou feliz">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/face_slightly_smiling"
+                    android:tint="#B45309"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Estou feliz"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#92400E" />
+
+            </LinearLayout>
+
+            <!-- CARTÃO: QUERO UMA PAUSA -->
+
+            <LinearLayout
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_card_pause"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Quero uma pausa">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/coffee"
+                    android:tint="#7E22CE"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Quero uma pausa"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#6B21A8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ÁREA DA MENSAGEM SELECIONADA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_message">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Mensagem selecionada"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+            <TextView
+                android:id="@+id/txtSelectedMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:gravity="center"
+                android:text="Nenhuma mensagem selecionada"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#25365B" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
