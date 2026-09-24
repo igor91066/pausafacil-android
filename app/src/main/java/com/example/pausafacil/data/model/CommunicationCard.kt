@@ -4,5 +4,6 @@ data class CommunicationCard(
     val id: Int,
     val title: String,
     val imageResId: Int,
-    val category: String
+    val category: String,
+    val messages: List<String>
 )

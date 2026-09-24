@@ -1,8 +1,7 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -89,29 +88,30 @@
                 android:background="@drawable/bg_card_water"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="Quero água">
+                tools:contentDescription="Quero água">
 
                 <ImageView
+                    android:id="@+id/imgWater"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:layout_marginBottom="12dp"
-                    android:src="@drawable/glass_water"
                     android:tint="#2563EB"
-                    android:contentDescription="@null" />
+                    android:contentDescription="@null"
+                    tools:src="@drawable/glass_water" />
 
                 <TextView
+                    android:id="@+id/txtWater"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Quero água"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#1E40AF" />
+                    android:textColor="#1E40AF"
+                    tools:text="Quero água" />
 
             </LinearLayout>
 
             <!-- CARTÃO: PRECISO DE AJUDA -->
-
 
             <LinearLayout
                 android:id="@+id/btnHelp"
@@ -125,24 +125,26 @@
                 android:background="@drawable/bg_card_help"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="Preciso de ajuda">
+                tools:contentDescription="Preciso de ajuda">
 
                 <ImageView
+                    android:id="@+id/imgHelp"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:layout_marginBottom="12dp"
+                    android:tint="#15803D"
                     android:contentDescription="@null"
-                    android:src="@drawable/hand_helping"
-                    android:tint="#15803D" />
+                    tools:src="@drawable/hand_helping" />
 
                 <TextView
+                    android:id="@+id/txtHelp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Preciso de ajuda"
                     android:textColor="#166534"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="Preciso de ajuda" />
 
             </LinearLayout>
 
@@ -170,24 +172,26 @@
                 android:background="@drawable/bg_card_happy"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="Estou feliz">
+                tools:contentDescription="Estou feliz">
 
                 <ImageView
+                    android:id="@+id/imgHappy"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:layout_marginBottom="12dp"
-                    android:src="@drawable/face_slightly_smiling"
                     android:tint="#B45309"
-                    android:contentDescription="@null" />
+                    android:contentDescription="@null"
+                    tools:src="@drawable/face_slightly_smiling" />
 
                 <TextView
+                    android:id="@+id/txtHappy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Estou feliz"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#92400E" />
+                    android:textColor="#92400E"
+                    tools:text="Estou feliz" />
 
             </LinearLayout>
 
@@ -205,56 +209,28 @@
                 android:background="@drawable/bg_card_pause"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="Quero uma pausa">
+                tools:contentDescription="Quero uma pausa">
 
                 <ImageView
+                    android:id="@+id/imgPause"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:layout_marginBottom="12dp"
-                    android:src="@drawable/coffee"
                     android:tint="#7E22CE"
-                    android:contentDescription="@null" />
+                    android:contentDescription="@null"
+                    tools:src="@drawable/coffee" />
 
                 <TextView
+                    android:id="@+id/txtPause"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Quero uma pausa"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#6B21A8" />
+                    android:textColor="#6B21A8"
+                    tools:text="Quero uma pausa" />
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <!-- ÁREA DA MENSAGEM SELECIONADA -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:background="@drawable/bg_message">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="Mensagem selecionada"
-                android:textSize="14sp"
-                android:textColor="#64748B" />
-
-            <TextView
-                android:id="@+id/txtSelectedMessage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="40dp"
-                android:gravity="center"
-                android:text="Nenhuma mensagem selecionada"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#25365B" />
 
         </LinearLayout>
 
